@@ -1,0 +1,14 @@
+{
+  "name": "inventory",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@apollo/federation": "latest",
+    "apollo-server": "latest",
+    "apollo-server-lambda": "^2.11.0",
+    "graphql": "latest",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-offline": "^5.12.1"
+  }
+}
