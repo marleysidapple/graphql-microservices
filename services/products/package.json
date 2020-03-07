@@ -4,8 +4,13 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@apollo/federation": "latest",
-    "apollo-server": "latest",
-    "graphql": "latest"
+    "@apollo/federation": "^0.13.2",
+    "apollo-server": "^2.11.0",
+    "apollo-server-lambda": "^2.11.0",
+    "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-offline": "^5.12.1"
   }
 }

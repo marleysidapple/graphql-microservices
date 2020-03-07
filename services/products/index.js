@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require("apollo-server");
+const { ApolloServer, gql } = require("apollo-server-lambda");
 const { buildFederatedSchema } = require("@apollo/federation");
 
 const typeDefs = gql`
@@ -36,9 +36,12 @@ const server = new ApolloServer({
   ])
 });
 
-server.listen({ port: 4003 }).then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`);
-});
+
+exports.product = server.createHandler();
+
+// server.listen({ port: 4003 }).then(({ url }) => {
+//   console.log(`🚀 Server ready at ${url}`);
+// });
 
 const products = [
   {
