@@ -6,7 +6,7 @@
   "dependencies": {
     "@apollo/federation": "latest",
     "apollo-server": "latest",
-    "apollo-server-lambda": "^2.11.0",
+    "apollo-server-lambda": "^2.14.2",
     "graphql": "latest"
   },
   "devDependencies": {
