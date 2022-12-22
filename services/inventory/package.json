@@ -9,6 +9,6 @@
     "apollo-server-lambda": "^2.11.0",
     "graphql": "latest",
     "serverless-dynamodb-local": "^0.2.39",
-    "serverless-offline": "^5.12.1"
+    "serverless-offline": "^12.0.3"
   }
 }
